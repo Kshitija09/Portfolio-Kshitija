@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Kshitija</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="Main">
+      <nav>
+        <h2 class="logo">Portf<span>olio</span></h2>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#">SKILLS</a></li>
+          <li><a href="#">PROJECTS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h4>Hello, my name is</h4>
+        <h1><span>Kshitija</span> Patil</h1>
+      
+        <div class="newslatter">
+          <form>
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              placeholder="Enter Your Email"
+            />
+            <input type="submit" name="submit" value="Let's Start" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--ABOUT SECTION-->
+    <section class="about" id ="about">
+      <div class="main-about">
+        <img src="./ABOUT-modified.jpg" alt="About Image" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <h5>ENTC Student <span>| Frontend Developer</span></h5>
+          <p>
+            I am an ENTC student at MIT AOE, Pune, with a strong grasp of C
+            programming and experience in front-end development. My passion for
+            electronics drives me to explore innovative applications. I enjoy
+            crafting user-friendly interfaces and am eager to contribute my
+            skills to the ever-evolving tech world. Let's connect and create
+            technology together!
+          </p>
+          <button type="button">Let's Talk</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="Main-section">
+        <div class="Label-strip"><h2>Hover to See <span>My Skills</span></h2></div>
+        <section class="Skills">
+          <div class="skill-block">
+            <div class="skill html Text">HTML</div>
+          </div>
+  
+          <div class="skill-block">
+            <div class="skill css Text">CSS</div>
+          </div>
+  
+          <div class="skill-block">
+            <div class="skill js Text">JS</div>
+          </div>
+  
+          <div class="skill-block">
+            <div class="skill react Text">C</div>
+          </div>
+        </section>
+        
+        <div class="container">
+            <h1 class="heading">My <span>Projects</span></h1>
+        
+            <div class="project-grid">
+              <!-- Project 1 -->
+              <div class="project-card">
+                <img class="project-image" src="./Project1.png" alt="Project 1" />
+                <div class="project-details">
+                  <h2 class="project-title">Zomato Clone</h2>
+                  <p class="project-description">
+                    I have created a landing page of Zomato using my knowledge of HTML CSS and bootstrap
+                  </p>
+                </div>
+              </div>
+        
+              <!-- Project 2 -->
+              <div class="project-card">
+                <img class="project-image" src="./project2.png" alt="Project 2" />
+                <div class="project-details">
+                  <h2 class="project-title">Calculator</h2>
+                  <p class="project-description">
+                    I Have Created A Calculator using HTML CSS and Javascript. Here i have used simple Onclick event and in built Evaluate Function.
+                  </p>
+                </div>
+              </div>
+        
+              <!-- Project 3 -->
+              <div class="project-card">
+                <img class="project-image" src="https://www.elprocus.com/wp-content/uploads/2015/07/Footstep-Power-Generation-System.jpg" alt="Project 3" />
+                <div class="project-details">
+                  <h2 class="project-title">Footstep Power using Piezo</h2>
+                  <p class="project-description">
+                    In my Diploma Worked On Model Where We were generating Power when Someone Walks on the Floor with help of Piezoelectric Power.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-container" onclick="flipCard()">
+                <div class="card">
+                  <div class="front">
+                    <h2>Contact Information</h2>
+                    <p>Email: kshitija.patil@mitaoe.ac.in</p>
+                    <p>Phone: +91 7822058722</p>
+                  </div>
+                  <div class="back">
+                    <h2>Download Resume</h2>
+                    <a href="./cv resume.pdf" download>
+                      <button class="glowing-button">Download</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="Contact-text">
+                <H1 >Contact <span>Now</span></H1>
+                <H3>Click on <span>Card</span> To Download <span>Resume</span> </H3>
+            </div>
+              </div>
+          </div>
+          <script>function flipCard() {
+            const cardContainer = document.querySelector(".card-container");
+            cardContainer.classList.toggle("flipped");
+          }
+          </script>
+          <footer>
+            <p>&copy; 2023 Kshitija. All rights reserved.</p>
+          </footer>
+  </body>
+</html>
